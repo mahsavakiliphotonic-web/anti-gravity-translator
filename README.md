@@ -91,6 +91,13 @@ git branch -M main
 git push -u origin main
 
 Step 4: Verify the Results
+# Home Work Task:
+Tweak your application Using GEMINI CLI.
 
+Upload the link of tweaked Git repo in a doc file
 
+Below are detailed instructions on how to Use GEMINI CLI.
 
+📸 Screenshots
+<img width="1238" height="882" alt="image" src="https://github.com/user-attachments/assets/6be54b65-1d0e-4726-a223-cca64f14abd8" />
+<img width="1237" height="888" alt="image" src="https://github.com/user-attachments/assets/eca57d9c-a384-49d8-8b53-0582db1724cc" />

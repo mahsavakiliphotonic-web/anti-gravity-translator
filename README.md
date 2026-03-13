@@ -41,6 +41,7 @@ Important:
 Use Google Chrome or Microsoft Edge for full Web Speech API support.
 
 📸 Screenshots
+
 <img width="1197" height="736" alt="image" src="https://github.com/user-attachments/assets/b00cdebb-e100-458c-ab72-d7b80b6c1083" />
 <img width="1203" height="747" alt="image" src="https://github.com/user-attachments/assets/533e8efd-6335-4a21-9c79-662a5cf61b0d" />
 <img width="1205" height="740" alt="image" src="https://github.com/user-attachments/assets/8130a7bd-82da-43ac-9820-95bbefcf959d" />
@@ -99,5 +100,6 @@ Upload the link of tweaked Git repo in a doc file
 Below are detailed instructions on how to Use GEMINI CLI.
 
 📸 Screenshots
+
 <img width="1238" height="882" alt="image" src="https://github.com/user-attachments/assets/6be54b65-1d0e-4726-a223-cca64f14abd8" />
 <img width="1237" height="888" alt="image" src="https://github.com/user-attachments/assets/eca57d9c-a384-49d8-8b53-0582db1724cc" />

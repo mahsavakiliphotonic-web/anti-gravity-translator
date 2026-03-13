@@ -101,5 +101,5 @@ Below are detailed instructions on how to Use GEMINI CLI.
 
 📸 Screenshots
 
-<img width="1238" height="882" alt="image" src="https://github.com/user-attachments/assets/6be54b65-1d0e-4726-a223-cca64f14abd8" />
+<img width="1212" height="868" alt="image" src="https://github.com/user-attachments/assets/58dc69a6-ad20-4929-8a54-3cb8db37bd62" />
 <img width="1237" height="888" alt="image" src="https://github.com/user-attachments/assets/eca57d9c-a384-49d8-8b53-0582db1724cc" />

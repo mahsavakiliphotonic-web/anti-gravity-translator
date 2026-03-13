@@ -97,8 +97,6 @@ Tweak your application Using GEMINI CLI.
 
 Upload the link of tweaked Git repo in a doc file
 
-Below are detailed instructions on how to Use GEMINI CLI.
-
 📸 Screenshots
 
 <img width="1212" height="868" alt="image" src="https://github.com/user-attachments/assets/58dc69a6-ad20-4929-8a54-3cb8db37bd62" />

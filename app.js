@@ -84,30 +84,36 @@ async function translateText(text) {
 
 // UI Updates
 function updateUI() {
-    // Toggle Button
+    // Toggle Button & Labels
     if (isFinnishToEnglish) {
         toggleBtn.classList.add('active');
         inputLangTag.textContent = 'FI';
         outputLangTag.textContent = 'EN';
-        document.getElementById('label-left').style.opacity = '0.5';
-        document.getElementById('label-right').style.opacity = '1';
+        inputLangTag.classList.add('active-tag');
+        outputLangTag.classList.remove('active-tag');
+        document.getElementById('label-left').style.color = 'var(--text-muted)';
+        document.getElementById('label-right').style.color = 'var(--primary)';
     } else {
         toggleBtn.classList.remove('active');
         inputLangTag.textContent = 'EN';
         outputLangTag.textContent = 'FI';
-        document.getElementById('label-left').style.opacity = '1';
-        document.getElementById('label-right').style.opacity = '0.5';
+        inputLangTag.classList.add('active-tag');
+        outputLangTag.classList.remove('active-tag');
+        document.getElementById('label-left').style.color = 'var(--primary)';
+        document.getElementById('label-right').style.color = 'var(--text-muted)';
     }
 
     // Mic Button & Status
     if (isListening) {
         micBtn.classList.add('active');
         statusIndicator.classList.add('listening');
-        statusText.textContent = "Listening...";
+        statusText.textContent = "Listening to your voice...";
+        document.querySelector('.glass-grid').classList.add('listening');
     } else {
         micBtn.classList.remove('active');
         statusIndicator.classList.remove('listening');
-        statusText.textContent = "Click microphone to start";
+        statusText.textContent = "Ready to listen";
+        document.querySelector('.glass-grid').classList.remove('listening');
     }
 }
 

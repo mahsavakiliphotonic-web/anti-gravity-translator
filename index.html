@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Translator - EN/FI</title>
+    <title>AI Voice Translator | Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg-2"></div>
     <div class="container">
         <header>
-            <h1>Voice Translator</h1>
-            <div class="toggle-container">
+            <div class="badge">AI Powered</div>
+            <h1>Anti-Gravity Translator</h1>
+            <div class="toggle-wrapper">
                 <span class="lang-label" id="label-left">English</span>
-                <button id="toggle-btn" class="toggle-btn">
+                <button id="toggle-btn" class="toggle-btn" aria-label="Toggle Language">
                     <div class="toggle-circle"></div>
                 </button>
                 <span class="lang-label" id="label-right">Finnish</span>
@@ -20,35 +26,43 @@
         </header>
 
         <main>
-            <div class="status-bar">
-                <div id="status-indicator" class="indicator"></div>
-                <span id="status-text">Click the microphone to start</span>
-            </div>
-
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-header">
-                        <span id="input-lang-tag">EN</span>
-                        <h3>Voice Input</h3>
-                    </div>
-                    <div id="input-text" class="text-display" placeholder="Speak now..."></div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <span id="output-lang-tag">FI</span>
-                        <h3>Translation</h3>
-                    </div>
-                    <div id="output-text" class="text-display translation" placeholder="Translation appears here..."></div>
+            <div class="status-wrapper">
+                <div class="status-pill">
+                    <div id="status-indicator" class="indicator"></div>
+                    <span id="status-text">Ready to listen</span>
                 </div>
             </div>
 
-            <div class="controls">
-                <button id="mic-btn" class="mic-btn">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
-                        <path fill="currentColor" d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
-                    </svg>
+            <div class="glass-grid">
+                <div class="glass-card">
+                    <div class="card-meta">
+                        <span class="lang-tag" id="input-lang-tag">EN</span>
+                        <div class="wave-icon">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div id="input-text" class="text-area" data-placeholder="Start speaking..."></div>
+                </div>
+
+                <div class="glass-card secondary">
+                    <div class="card-meta">
+                        <span class="lang-tag accent" id="output-lang-tag">FI</span>
+                    </div>
+                    <div id="output-text" class="text-area translation" data-placeholder="Translation will appear here..."></div>
+                </div>
+            </div>
+
+            <div class="action-center">
+                <button id="mic-btn" class="mic-trigger" title="Start Listening">
+                    <div class="mic-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </div>
+                    <div class="pulse-ring"></div>
                 </button>
             </div>
         </main>
